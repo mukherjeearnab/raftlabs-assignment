@@ -7,9 +7,9 @@ const main = async () => {
     data.books = await CSV.ReadCSV("./data/books.csv");
     data.magazines = await CSV.ReadCSV("./data/magazines.csv");
 
-    Views.FindByAuthor(data);
+    Views.AddDocument(data);
 
-    CSV.WriteCSV("./data/temp.csv", data.magazines);
+    // CSV.WriteCSV("./data/temp.csv", data.magazines);
 };
 
 main();
