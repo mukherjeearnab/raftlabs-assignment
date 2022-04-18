@@ -1,0 +1,6 @@
+node_modules/
+
+*.csv
+!authors.csv
+!books.csv
+!magazines.csv
