@@ -8,7 +8,8 @@
     "csv-parser": "^3.0.0",
     "json2csv": "^5.0.7",
     "lodash": "^4.17.21",
-    "neat-csv": "^7.0.0"
+    "neat-csv": "^7.0.0",
+    "prompt-sync": "^4.2.0"
   },
   "devDependencies": {},
   "scripts": {
