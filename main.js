@@ -1,10 +1,13 @@
 const CSV = require("./modules/csv");
+const Views = require("./modules/views");
 
 const main = async () => {
-    const data = await CSV.ReadCSV("./data/authors.csv");
-    console.table(data);
+    let data = {};
+    data.authors = await CSV.ReadCSV("./data/authors.csv");
+    data.books = await CSV.ReadCSV("./data/books.csv");
+    data.magazines = await CSV.ReadCSV("./data/magazines.csv");
 
-    CSV.WriteCSV("./data/temp.csv", data);
+    Views.PrintAllSorted(data);
 };
 
 main();

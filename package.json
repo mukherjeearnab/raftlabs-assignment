@@ -4,8 +4,10 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "cli-table": "^0.3.11",
     "csv-parser": "^3.0.0",
     "json2csv": "^5.0.7",
+    "lodash": "^4.17.21",
     "neat-csv": "^7.0.0"
   },
   "devDependencies": {},
