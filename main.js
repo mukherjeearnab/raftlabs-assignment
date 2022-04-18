@@ -8,6 +8,8 @@ const main = async () => {
     data.magazines = await CSV.ReadCSV("./data/magazines.csv");
 
     Views.PrintAllSorted(data);
+
+    CSV.WriteCSV("./data/temp.csv", data.magazines);
 };
 
 main();

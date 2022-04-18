@@ -11,6 +11,10 @@ module.exports = (filename) => {
                 result.push(data);
             })
             .on("end", () => {
+                result.map((item) => {
+                    if (item.authors) item.authors = item.authors.split(",");
+                });
+
                 resolve(result);
             });
     });
