@@ -3,11 +3,6 @@ const pos2str = (x, y) => {
     return `${x},${y}`;
 };
 
-// method to convert string to position (x, y)
-const str2pos = (str) => {
-    return str.split(",").map((item) => parseInt(item.trim()));
-};
-
 // method to validate a position (x, y)
 const validPos = (x, y) => {
     return x >= 1 && x <= 8 && y >= 1 && y <= 8;

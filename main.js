@@ -1,6 +1,7 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
 const Solution = require("./solution.js");
+const Visual = require("./visual.js");
 
 const main = () => {
     // Get the curent position
@@ -12,7 +13,9 @@ const main = () => {
     // Call the solution method to solve the problem
     const answer = Solution(x, y);
     console.log("The Knight can visit the following cells:");
-    console.log(answer);
+    // console.log(answer);
+
+    Visual(answer);
 };
 
 main();
