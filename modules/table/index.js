@@ -4,7 +4,7 @@ const truncate = (str) => {
     return str;
 };
 
-module.exports = (data) => {
+module.exports = (data, cols) => {
     const output = data.map((item) => {
         const content = JSON.parse(JSON.stringify(item));
 
@@ -14,5 +14,5 @@ module.exports = (data) => {
 
         return content;
     });
-    console.table(output);
+    console.table(output, cols);
 };
