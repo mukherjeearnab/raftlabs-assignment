@@ -1,5 +1,5 @@
 const truncate = (str) => {
-    if (str.length > 10) return str.slice(0, 10) + "...";
+    if (str.length > 10) return str.slice(0, 11) + "...";
 
     return str;
 };
