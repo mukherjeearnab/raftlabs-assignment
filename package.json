@@ -2,20 +2,22 @@
   "name": "assignment1",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
-  "dependencies": {
-    "cli-table": "^0.3.11",
-    "csv-parser": "^3.0.0",
-    "json2csv": "^5.0.7",
-    "lodash": "^4.17.21",
-    "neat-csv": "^7.0.0",
-    "prompt-sync": "^4.2.0"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukherjeearnab/raftlabs-assignment.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukherjeearnab/raftlabs-assignment/issues"
+  },
+  "homepage": "https://github.com/mukherjeearnab/raftlabs-assignment#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
 }
